@@ -6,5 +6,6 @@ public class Demo {
 		System.out.println("Hello");
 		System.out.println("Dummy prog");
 		System.out.println("The end!!!!!!!!");
+		System.out.println("Again the end !!");
 	}
 }
