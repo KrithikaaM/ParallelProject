@@ -178,6 +178,16 @@ public class Client {
 	}
 
 	private static void bankOperation() throws NumberFormatException, IOException {
+		
+		System.out.println("Enter your account number to proceed....");
+		int accno = Integer.parseInt(br.readLine());
+		Customer customer = new Customer();
+		Account account = new Account();
+		if(accno==account.getAccountNo())
+		{
+			System.out.println("Thank you,you may proceed.");
+		
+		
 		// TODO Auto-generated method stub
 		System.out.println("1.Deposit amount");
 		System.out.println("2.Withdraw amount");
@@ -189,7 +199,7 @@ public class Client {
 		do {
 			Scanner sc = new Scanner(System.in);
 			choice = sc.nextInt();
-
+             
 			switch (choice) {
 
 			case 1:
@@ -252,4 +262,7 @@ public class Client {
 
 		} while (choice != 7);
 	}
+		System.out.println("Please enter a valid account number...");
+	}
+
 }
